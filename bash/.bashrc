@@ -26,12 +26,13 @@ unset rc
 
 EDITOR=vim
 
-alias waybar-reload="killall -SIGUSR2 waybar"
-
 ### bling.sh source start
 test -f /usr/share/ublue-os/bluefin-cli/bling.sh && source /usr/share/ublue-os/bluefin-cli/bling.sh
 ### bling.sh source end
 
 
 eval "$(starship init bash)"
+eval $(thefuck --alias)
 
+
+source ~/.bash_aliases
